@@ -1,4 +1,5 @@
 import * as React from 'react';
+import GiphyImage from './GiphyImage';
 
 interface Beer {
   id: string;
@@ -14,6 +15,7 @@ interface BeerListState {
 }
 
 class BeerList extends React.Component<BeerListProps, BeerListState> {
+
   constructor(props: BeerListProps) {
     super(props);
 
@@ -27,8 +29,8 @@ class BeerList extends React.Component<BeerListProps, BeerListState> {
     this.setState({isLoading: true});
 
     fetch('http://localhost:8080/good-beers')
-        .then(response => response.json())
-        .then(data => this.setState({beers: data, isLoading: false}));
+      .then(response => response.json())
+      .then(data => this.setState({beers: data, isLoading: false}));
   }
 
   render() {
@@ -39,14 +41,15 @@ class BeerList extends React.Component<BeerListProps, BeerListState> {
     }
 
     return (
-        <div>
-          <h2>Beer List</h2>
-          {beers.map((beer: Beer) =>
-              <div key={beer.id}>
-                {beer.name}
-              </div>
-          )}
-        </div>
+      <div>
+        <h2>Beer List</h2>
+        {beers.map((beer: Beer) =>
+          <div key={beer.id}>
+            {beer.name}<br/>
+            <GiphyImage name={beer.name}/>
+          </div>
+        )}
+      </div>
     );
   }
 }
