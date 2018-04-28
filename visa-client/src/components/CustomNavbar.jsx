@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Navbar, Nav, NavItem, Grid, Image} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './CustomNavbar.css'
+import intl from 'react-intl-universal';
 
 class CustomNavbar extends Component {
   render() {
@@ -19,7 +20,7 @@ class CustomNavbar extends Component {
             <Navbar.Collapse>
               <Nav>
                 <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-                  Početna
+                  {intl.get('SIMPLE')}
                 </NavItem>
                 <NavItem eventKey={2} componentClass={Link} href="/p_categories" to="/p_categories">
                   Kategorije

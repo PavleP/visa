@@ -12,12 +12,14 @@ import Settings from './components/Settings';
 import Login from './components/Login';
 import Navbar from './components/CustomNavbar';
 import Logo from './components/Logo';
+import InitLocale from './components/InitLocale';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
+          <InitLocale/>
           <Logo/>
           <Navbar />
           <Route exact path="/" component={Home} />
