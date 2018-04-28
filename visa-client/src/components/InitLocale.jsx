@@ -61,6 +61,7 @@ class InitLocale extends Component {
         .then(() => {
           // After loading CLDR locale data, start to render
           this.setState({ initDone: true });
+          this.props.handler();
         });
   }
 
