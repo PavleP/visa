@@ -1,6 +1,15 @@
-nav.navbar, .navbar-default {
-  background-color: #2892D7 !important;
+.navbar-brand {
+  display: flex;
+  align-items: center;
 }
+.navbar-brand>img {
+  padding: 7px 14px;
+  width: 40%;
+}
+
+/*nav.navbar, .navbar-default {*/
+  /*background-color: #2892D7 !important;*/
+/*}*/
 
 /*.navbar-default {*/
   /*background-image: none;*/

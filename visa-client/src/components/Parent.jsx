@@ -11,7 +11,6 @@ import Users from './Users';
 import Practice from './Practice';
 import Navbar from './CustomNavbar';
 import Logo from './Logo';
-import MyCarousel from './MyCarousel';
 
 
 class Parent extends Component {
@@ -22,7 +21,6 @@ class Parent extends Component {
             <div>
               <Logo/>
               <Navbar/>
-              <MyCarousel/>
               <Route exact path="/" component={Home}/>
               <Route path="/p_categories" component={Categories}/>
               <Route path="/p_vehicles" component={Vehicles}/>

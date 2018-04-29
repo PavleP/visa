@@ -12,7 +12,7 @@ class CustomNavbar extends Component {
             <Navbar.Header>
               <Navbar.Brand>
                 <Link to="/">
-                  <Image src="logo/logo_small.png"/>
+                  <Image src="logo/logo_small.png" />
                 </Link>
               </Navbar.Brand>
               <Navbar.Toggle/>
