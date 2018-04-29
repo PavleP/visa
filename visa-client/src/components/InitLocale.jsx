@@ -1,15 +1,16 @@
 import intl from "react-intl-universal";
 import _ from "lodash";
 import React, { Component } from "react";
+import {Grid} from 'react-bootstrap';
 
 const SUPPORT_LOCALES = [
   {
-    name: "Serbian",
-    value: "sr-RS"
+    name: "Latinica",
+    value: "en-US"
   },
   {
-    name: "English",
-    value: "en-US"
+    name: "Ћирилица",
+    value: "fr-FR"
   }
 
 ];
@@ -67,12 +68,14 @@ class InitLocale extends Component {
 
   renderLocaleSelector() {
     return (
-      <select onChange={this.onSelectLocale} defaultValue="">
-        <option value="" disabled>Change Language</option>
-        {SUPPORT_LOCALES.map(locale => (
-          <option key={locale.value} value={locale.value}>{locale.name}</option>
-        ))}
-      </select>
+        <Grid>
+          <select onChange={this.onSelectLocale} defaultValue="">
+            <option value="" disabled>Change Language</option>
+            {SUPPORT_LOCALES.map(locale => (
+                <option key={locale.value} value={locale.value}>{locale.name}</option>
+            ))}
+          </select>
+        </Grid>
     );
   }
 

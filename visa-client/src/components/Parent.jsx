@@ -10,15 +10,19 @@ import Contact from './Contact';
 import Users from './Users';
 import Practice from './Practice';
 import Navbar from './CustomNavbar';
+import Logo from './Logo';
+import MyCarousel from './MyCarousel';
 
 
-class Navv extends Component {
+class Parent extends Component {
   render() {
     if (this.props.initDone) {
       return (
           <Router>
             <div>
+              <Logo/>
               <Navbar/>
+              <MyCarousel/>
               <Route exact path="/" component={Home}/>
               <Route path="/p_categories" component={Categories}/>
               <Route path="/p_vehicles" component={Vehicles}/>
@@ -37,4 +41,4 @@ class Navv extends Component {
   }
 }
 
-export default Navv;
+export default Parent;

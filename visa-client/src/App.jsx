@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import Logo from './components/Logo';
 import InitLocale from './components/InitLocale';
-import Navv from './components/Navv';
+import Parent from './components/Parent';
 import {BrowserRouter as Router} from 'react-router-dom';
 
 class App extends Component {
@@ -23,8 +22,7 @@ class App extends Component {
         <Router>
           <div>
             <InitLocale handler={this.handler}/>
-            <Logo/>
-            <Navv initDone={this.state.initDone}/>
+            <Parent initDone={this.state.initDone}/>
           </div>
         </Router>
     );

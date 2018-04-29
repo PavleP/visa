@@ -20,30 +20,30 @@ class CustomNavbar extends Component {
             <Navbar.Collapse>
               <Nav>
                 <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-                  {intl.get('SIMPLE')}
+                  {intl.get('Tab_Home')}
                 </NavItem>
                 <NavItem eventKey={2} componentClass={Link} href="/p_categories" to="/p_categories">
-                  Kategorije
+                  {intl.get('Tab_Categories')}
                 </NavItem>
                 <NavItem eventKey={3} componentClass={Link} href="/p_vehicles" to="/p_vehicles">
-                  Vozila
+                  {intl.get('Tab_Vehicles')}
                 </NavItem>
                 <NavItem eventKey={4} componentClass={Link} href="/p_exams" to="/p_exams">
-                  Ispiti
+                  {intl.get('Tab_Exams')}
                 </NavItem>
                 <NavItem eventKey={5} componentClass={Link} href="/p_practice" to="/p_practice">
-                  Vežba
+                  {intl.get('Tab_Practice')}
                 </NavItem>
               </Nav>
               <Nav pullRight>
                 <NavItem eventKey={6} componentClass={Link} href="/users" to="/users">
-                  Korisnici
+                  {intl.get('Tab_Users')}
                 </NavItem>
                 <NavItem eventKey={7} componentClass={Link} href="/s" to="/s">
-                  Uređivanje
+                  {intl.get('Tab_Settings')}
                 </NavItem>
                 <NavItem eventKey={8} componentClass={Link} href="/login" to="/login">
-                  Prijava
+                  {intl.get('Tab_Login')}
                 </NavItem>
               </Nav>
             </Navbar.Collapse>
