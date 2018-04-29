@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import intl from 'react-intl-universal';
 import {Col, Grid, Table} from 'react-bootstrap';
+import Image from 'react-bootstrap/es/Image';
 
 class Categories extends Component {
   render() {
@@ -21,44 +22,45 @@ class Categories extends Component {
               </thead>
               <tbody>
               <tr>
-                <th>{intl.get('Tab_Categories_AM_Category')}</th>
-                <th>{intl.get('Tab_Categories_AM_Vehicles')}</th>
-                <th>{intl.get('Tab_Categories_AM_Condition')}</th>
+                <td>{intl.get('Tab_Categories_AM_Category')}</td>
+                <td>{intl.get('Tab_Categories_AM_Vehicles')}</td>
+                <td>{intl.get('Tab_Categories_AM_Condition')}</td>
               </tr>
 
               <tr>
-                <th>{intl.get('Tab_Categories_A1_Category')}</th>
-                <th>{intl.get('Tab_Categories_A1_Vehicles')}</th>
-                <th>{intl.get('Tab_Categories_A1_Condition')}</th>
+                <td>{intl.get('Tab_Categories_A1_Category')}</td>
+                <td>{intl.get('Tab_Categories_A1_Vehicles')}</td>
+                <td>{intl.get('Tab_Categories_A1_Condition')}</td>
               </tr>
 
               <tr>
-                <th>{intl.get('Tab_Categories_A2_Category')}</th>
-                <th>{intl.get('Tab_Categories_A2_Vehicles')}</th>
-                <th>{intl.get('Tab_Categories_A2_Condition')}</th>
+                <td>{intl.get('Tab_Categories_A2_Category')}</td>
+                <td>{intl.get('Tab_Categories_A2_Vehicles')}</td>
+                <td>{intl.get('Tab_Categories_A2_Condition')}</td>
               </tr>
 
               <tr>
-                <th>{intl.get('Tab_Categories_A_Category')}</th>
-                <th>{intl.get('Tab_Categories_A_Vehicles')}</th>
-                <th>{intl.get('Tab_Categories_A_Condition')}</th>
+                <td>{intl.get('Tab_Categories_A_Category')}</td>
+                <td>{intl.get('Tab_Categories_A_Vehicles')}</td>
+                <td>{intl.get('Tab_Categories_A_Condition')}</td>
               </tr>
 
               <tr>
-                <th>{intl.get('Tab_Categories_B_Category')}</th>
-                <th>{intl.get('Tab_Categories_B_Vehicles')}</th>
-                <th>{intl.get('Tab_Categories_B_Condition')}</th>
+                <td>{intl.get('Tab_Categories_B_Category')}</td>
+                <td>{intl.get('Tab_Categories_B_Vehicles')}</td>
+                <td>{intl.get('Tab_Categories_B_Condition')}</td>
               </tr>
 
               <tr>
-                <th>{intl.get('Tab_Categories_F_Category')}</th>
-                <th>{intl.get('Tab_Categories_F_Vehicles')}</th>
-                <th>{intl.get('Tab_Categories_F_Condition')}</th>
+                <td>{intl.get('Tab_Categories_F_Category')}</td>
+                <td>{intl.get('Tab_Categories_F_Vehicles')}</td>
+                <td>{intl.get('Tab_Categories_F_Condition')}</td>
               </tr>
               </tbody>
             </Table>
 
             {intl.getHTML('Tab_Categories_Minimum_Classes_Count_Description')}
+            <Image src="min-fond/min-fond.gif"/>
             {intl.getHTML('Tab_Categories_Minimum_Classes_Count_Note')}
           </Col>
         </Grid>
